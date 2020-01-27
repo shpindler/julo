@@ -22,6 +22,7 @@
         />
         <site-navigation-item v-bind="language" bordered />
         <hamburger
+          v-if="$bp.isMobile"
           :opened="opened"
           class="site-navigation__btn"
           @click="toggleOpened"

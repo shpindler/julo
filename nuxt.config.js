@@ -42,7 +42,7 @@ export default {
    */
   modules: [
     '@shpindler/nuxt-global-components',
-    'nuxt-layout',
+    'nuxt-ui',
     '@nuxtjs/style-resources'
   ],
   globalComponents: {

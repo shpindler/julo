@@ -37,6 +37,26 @@ export default {
 }
 </script>
 
+<style lang="scss">
+.site-navigation-item {
+  &:not(:last-of-type) {
+    margin-right: 30px;
+
+    @include tablet {
+      margin-right: 10px;
+    }
+  }
+
+  @include mobile {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+</style>
+
 <style lang="scss" scoped>
 .site-navigation-item {
   height: 18px;
@@ -54,22 +74,6 @@ export default {
       background-color: var(--white);
       transition: all 0.15s ease-in-out;
     }
-  }
-
-  @include mobile {
-    margin-bottom: 20px;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-}
-
-.site-navigation-item:not(:last-of-type) {
-  margin-right: 30px;
-
-  @include tablet {
-    margin-right: 10px;
   }
 }
 
